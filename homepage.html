@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyers Company</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E1E1DE;
+            color: #1A1A14;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #FFFFFF;
+            color: #E0BF3D;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: #69E187;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        /* Contenedor Contacto */
+        .contact-container {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #E0BF3D;
+        }
+
+        .contact-container h2 {
+            color: #1A1A14;
+        }
+
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-container label {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .contact-container input,
+        .contact-container select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #E0BF3D;
+        }
+
+        /* Tipos de Abogados */
+        .lawyer-types {
+            background-color: #69E187;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #E0BF3D;
+            color: #FFFFFF;
+        }
+
+        .lawyer-types h2 {
+            color: #FFFFFF;
+        }
+
+        .lawyer-types ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .lawyer-types li {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Contenedor Información */
+        .info-container {
+            background-color: #E1E1DE;
+            padding: 20px;
+            margin: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Lawyers Company</h1>
+        <nav>
+            <a href="#">Logo</a>
+            <a href="#">Reload</a>
+            <a href="administrador.html">Página principal</a>
+        </nav>
+    </header>
+
+    <!-- Contenedor Contacto -->
+    <section class="contact-container">
+        <h2>Contacto Lawyers Company</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="case-type">Tipo de casos a consultar:</label>
+            <select id="case-type" name="case-type" required>
+                <option value="familia">Abogado Familia</option>
+                <option value="judicial">Abogado Judicial</option>
+                <option value="penal">Abogado Penal</option>
+                <option value="empresarial">Abogado Empresarial</option>
+                <option value="laboral">Abogado Laboral</option>
+                <option value="divorcio">Abogado Divorcio</option>
+                <option value="juez">Juez</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Tipos de Abogados -->
+    <section class="lawyer-types">
+        <h2>Tipos de Abogados</h2>
+        <ul>
+            <li>Abogado Familia</li>
+            <li>Abogado Judicial</li>
+            <li>Abogado Penal</li>
+            <li>Abogado Empresarial</li>
+            <li>Abogado Laboral</li>
+            <li>Abogado Divorcio</li>
+            <li>Juez</li>
+        </ul>
+    </section>
+
+    <!-- Contenedor Información -->
+    <section class="info-container">
+        <h2>Información Adicional</h2>
+        <p>
+            Aquí va la información adicional que se puede cargar desde un archivo .txt, usando Arial, con un tamaño entre 24 y 30 puntos.
+        </p>
+    </section>
+
+</body>
+</html>

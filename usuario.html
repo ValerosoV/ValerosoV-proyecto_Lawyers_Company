@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario - Lawyers Company</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E1E1DE;
+            color: #1A1A14;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #E0BF3D;
+            padding: 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* Contenedor Perfil Usuario */
+        .profile-container {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #E0BF3D;
+        }
+
+        .profile-container h2 {
+            color: #E0BF3D;
+            margin-bottom: 20px;
+        }
+
+        .profile-container .form-group {
+            margin-bottom: 20px;
+        }
+
+        .profile-container label {
+            display: block;
+            font-size: 18px;
+            color: #1A1A14;
+        }
+
+        .profile-container input {
+            padding: 10px;
+            margin-top: 5px;
+            width: 100%;
+            border: 1px solid #E0BF3D;
+        }
+
+        .btn-save-profile {
+            background-color: #69E187;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* Contenedor Casos Usuario */
+        .cases-container {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #E0BF3D;
+        }
+
+        .cases-container h2 {
+            color: #E0BF3D;
+            margin-bottom: 20px;
+        }
+
+        .cases-container p {
+            font-size: 24px;
+            color: #1A1A14;
+        }
+
+        /* Contenedor Abogado Asignado */
+        .assigned-lawyer-container {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #E0BF3D;
+        }
+
+        .assigned-lawyer-container h2 {
+            color: #E0BF3D;
+            margin-bottom: 20px;
+        }
+
+        .assigned-lawyer-container p {
+            font-size: 24px;
+            color: #1A1A14;
+        }
+
+        /* Estado del Caso */
+        .case-status {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .case-status span {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+
+        .status-tramite {
+            background-color: #38E16E;
+        }
+
+        .status-archivado {
+            background-color: #1A1A14;
+        }
+
+        .status-finalizado {
+            background-color: #F51A1A;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Usuario - Lawyers Company</h1>
+    </header>
+
+    <!-- Contenedor Perfil Usuario -->
+    <section class="profile-container">
+        <h2>Perfil de Usuario</h2>
+        <div class="form-group">
+            <label for="user-name">Nombre:</label>
+            <input type="text" id="user-name" name="user-name">
+        </div>
+        <div class="form-group">
+            <label for="user-email">Correo Electrónico:</label>
+            <input type="email" id="user-email" name="user-email">
+        </div>
+        <div class="form-group">
+            <label for="user-id">ID:</label>
+            <input type="text" id="user-id" name="user-id">
+        </div>
+        <button class="btn-save-profile">Guardar Cambios</button>
+    </section>
+
+    <!-- Contenedor Casos Usuario -->
+    <section class="cases-container">
+        <h2>Casos del Usuario</h2>
+        <p>Detalles del caso asignado al usuario con información detallada. Los detalles se mostrarán en un formato legible.</p>
+    </section>
+
+    <!-- Contenedor Abogado Asignado a Caso -->
+    <section class="assigned-lawyer-container">
+        <h2>Abogado Asignado</h2>
+        <p>Nombre del abogado asignado y detalles adicionales sobre su experiencia y especialidad.</p>
+    </section>
+
+    <!-- Estado del Caso -->
+    <section class="case-status">
+        <h2>Estado del Caso:</h2>
+        <span class="status-tramite">Trámite</span>
+        <span class="status-archivado">Archivado</span>
+        <span class="status-finalizado">Finalizado</span>
+    </section>
+
+</body>
+</html>

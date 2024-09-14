@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Casos - Lawyers Company</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E1E1DE;
+            color: #1A1A14;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #E0BF3D;
+            padding: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            flex: 1;
+        }
+
+        header .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #FFFFFF; /* Representación del logo */
+            border-radius: 50%;
+        }
+
+        header .reload, header .homepage {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /* Contenedor de búsqueda */
+        .search-container {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #E0BF3D;
+        }
+
+        .search-container h2 {
+            color: #E0BF3D;
+            margin-bottom: 20px;
+        }
+
+        .search-container .form-group {
+            margin-bottom: 20px;
+        }
+
+        .search-container label {
+            display: block;
+            font-size: 18px;
+            color: #1A1A14;
+        }
+
+        .search-container input {
+            padding: 10px;
+            margin-top: 5px;
+            width: 100%;
+            border: 1px solid #E0BF3D;
+        }
+
+        .btn-search {
+            background-color: #69E187;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Estado del Caso */
+        .case-status {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .case-status span {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+
+        .status-tramite {
+            background-color: #38E16E;
+        }
+
+        .status-archivado {
+            background-color: #1A1A14;
+        }
+
+        .status-finalizado {
+            background-color: #F51A1A;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo"></div>
+        <h1>Lawyers Company</h1>
+        <a href="#" class="reload">Reload</a>
+        <a href="#" class="homepage">Página Principal</a>
+    </header>
+
+    <!-- Contenedor de Búsqueda de Casos -->
+    <section class="search-container">
+        <h2>Filtro por ID de Caso</h2>
+        <div class="form-group">
+            <label for="case-id">ID del Caso:</label>
+            <input type="text" id="case-id" name="case-id" placeholder="Ingrese el ID del caso">
+        </div>
+        <button class="btn-search">Buscar Caso</button>
+    </section>
+
+    <!-- Estado del Caso -->
+    <section class="case-status">
+        <h2>Estado del Caso:</h2>
+        <span class="status-tramite">Trámite</span>
+        <span class="status-archivado">Archivado</span>
+        <span class="status-finalizado">Finalizado</span>
+    </section>
+
+</body>
+</html>

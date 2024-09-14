@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Lawyers Company</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E1E1DE;
+            color: #1A1A14;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #E0BF3D;
+            padding: 20px;
+            text-align: center;
+            color: #1A1A14;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* Pestañas */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1A1A14;
+        }
+
+        nav a {
+            color: #E0BF3D;
+            text-decoration: none;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #E0BF3D;
+            color: #1A1A14;
+        }
+
+        /* Contenedor */
+        .container {
+            padding: 20px;
+        }
+
+        /* Visualización de Usuarios */
+        .user-section, .procurador-section, .filtro-section {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #E0BF3D;
+        }
+
+        .user-section h2, .procurador-section h2, .filtro-section h2 {
+            color: #1A1A14;
+            margin-bottom: 20px;
+        }
+
+        /* Formulario */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 18px;
+        }
+
+        .form-group input, .form-group select {
+            padding: 10px;
+            margin-top: 5px;
+            width: 100%;
+            border: 1px solid #E0BF3D;
+        }
+
+        /* Botones */
+        .btn-save {
+            background-color: #69E187;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .btn-save:hover {
+            background-color: #38E16E;
+        }
+
+        .btn-edit {
+            background-color: #E0BF3D;
+            color: #1A1A14;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .btn-edit:hover {
+            background-color: #1A1A14;
+            color: #E0BF3D;
+        }
+
+        /* Buscador */
+        .search-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #E0BF3D;
+        }
+
+        .search-bar button {
+            background-color: #E0BF3D;
+            color: #1A1A14;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .search-bar button:hover {
+            background-color: #1A1A14;
+            color: #E0BF3D;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Administrador - Lawyers Company</h1>
+    </header>
+
+    <!-- Navegación de pestañas -->
+    <nav>
+        <a href="usuario.html">Usuarios</a>
+        <a href="procurador.html">Procuradores</a>
+        <a href="casos.html">Gestionar Casos</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Pestaña Usuarios -->
+        <section id="usuarios" class="user-section">
+            <h2>Visualización de Usuarios</h2>
+            <div class="form-group">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="user-id">ID de Usuario:</label>
+                <input type="text" id="user-id" name="user-id">
+            </div>
+            <button class="btn-edit">Editar Usuario</button>
+            <button class="btn-save">Guardar Cambios</button>
+        </section>
+
+        <!-- Pestaña Procuradores -->
+        <section id="procuradores" class="procurador-section">
+            <h2>Visualización de Procuradores</h2>
+            <div class="form-group">
+                <label for="procurador-name">Nombre del Procurador:</label>
+                <input type="text" id="procurador-name" name="procurador-name">
+            </div>
+            <div class="form-group">
+                <label for="procurador-id">ID del Procurador:</label>
+                <input type="text" id="procurador-id" name="procurador-id">
+            </div>
+            <button class="btn-edit">Editar Procurador</button>
+            <button class="btn-save" style="background-color: #38E16E;">Guardar Cambios</button>
+        </section>
+
+        <!-- Pestaña Gestionar Casos -->
+        <section id="gestionar-casos" class="filtro-section">
+            <h2>Gestionar Casos</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar casos...">
+                <button>Buscar</button>
+            </div>
+            <p>Utiliza el buscador para filtrar los casos según tus necesidades.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
